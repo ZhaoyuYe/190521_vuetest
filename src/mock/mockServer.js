@@ -3,6 +3,7 @@ import Mock from 'mockjs'
 import data from './data.json'
 
 // 返回goods的接口
+// url为goods发出请求，此时会被mock拦截，并返回指定数据
 Mock.mock('/goods', {code:0, data: data.goods})
 // 返回ratings的接口
 Mock.mock('/ratings', {code:0, data: data.ratings})
