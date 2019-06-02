@@ -16,6 +16,7 @@ import {
     CLEAR_CART,
     RECEIVE_SEARCH_SHOPS
 } from './mutation-types'
+import Vue from 'vue'
 
 export default {
     [RECEIVE_ADDRESS] (state, {address}){

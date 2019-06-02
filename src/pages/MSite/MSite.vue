@@ -2,9 +2,11 @@
     <div class="msite">
         <!--首页头部-->
         <HeaderTop :title="address.name">
+          <!-- 将slot="left"部分作为插槽，插到HeaderTop对应slot标签中 -->
           <router-link class="header_search" slot="left" to="/search">
             <i class="iconfont icon-sousuo"></i>
           </router-link>
+          <!-- 将slot="right"部分作为插槽，插到HeaderTop对应slot标签中 -->
           <router-link class="header_login" slot="right" :to="userInfo._id ? '/userinfo' : '/login'">
             <span class="header_login_text" v-if="!userInfo._id">
               登录 | 注册

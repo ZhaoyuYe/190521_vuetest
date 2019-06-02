@@ -32,6 +32,7 @@
 <script>
     export default {
         methods: {
+            // 此处也可以使用router-link，配合to属性实现路由导航
             goTo (path){
                 this.$router.replace(path)
             }

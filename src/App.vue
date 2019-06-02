@@ -1,7 +1,9 @@
 <template>
     <div id="app">
         <!-- 承载主页面显示内容 -->
+        <!-- 当路由匹配到某个组件时（如MSite），便会渲染该组件，此时router-view组件便会被替换，不一定需要router-link -->
         <router-view/>
+        <!-- 此处放置底部内容，同时接受路由组件传来的参数控制显示隐藏 -->
         <FooterGuide v-show="$route.meta.showFooter"/>
     </div>
 </template>

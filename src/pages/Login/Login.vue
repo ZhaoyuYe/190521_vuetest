@@ -146,11 +146,11 @@
           }
 
           // 停止倒计时
-              if(this.computeTime){
-                this.computeTime = 0;
-                clearInterval(this.intervalId);
-                this.intervalId = 0;
-              }
+          if(this.computeTime){
+            this.computeTime = 0;
+            clearInterval(this.intervalId);
+            this.intervalId = 0;
+          }
           // 根据结果数据进行处理
           if(result.code===0){
             // 成功
